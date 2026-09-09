@@ -63,7 +63,8 @@ def get_access_token():
             "grant_type": "refresh_token",
         },
     )
-
+    if not r.ok:
+        print(r.status_code, r.text)
     r.raise_for_status()
 
     return r.json()["access_token"]
