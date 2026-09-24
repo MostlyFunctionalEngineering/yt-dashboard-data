@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YT Dashboard Data</title>
+<style>
+  :root { --bg:#fbfbfa; --fg:#1c1f23; --muted:#5b6470; --line:#dcdfe3; --link:#1a5fb4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16181b; --fg:#e8eaed; --muted:#9aa3ad; --line:#2b3036; --link:#7db3ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:3rem 1.25rem 4rem; background:var(--bg); color:var(--fg);
+         font:1.0625rem/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:40rem; margin:0 auto; }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 .5rem; }
+  h2 { font-size:1.2rem; margin:2.25rem 0 .5rem; }
+  p, ul { margin:.75rem 0; }
+  .lede { color:var(--muted); font-size:1.15rem; margin-top:0; }
+  a { color:var(--link); text-underline-offset:.15em; }
+  a:focus-visible { outline:2px solid var(--link); outline-offset:2px; }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line); color:var(--muted); font-size:.95rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>YT Dashboard Data</h1>
+  <p class="lede">A personal tool that collects analytics for the Mostly Functional Engineering YouTube channel and turns them into a dashboard.</p>
+
+  <h2>What it does</h2>
+  <p>YT Dashboard Data runs on a schedule, reads the owner's own YouTube channel analytics (views, watch time, subscriber changes, engagement, and top videos), and writes summary figures to a JSON file. The dashboard reads that file to show weekly and monthly trends.</p>
+
+  <h2>Who uses it</h2>
+  <p>Only the channel owner. The app is not offered to the public, has no sign-in for other people, and does not collect data from anyone else.</p>
+
+  <h2>Google user data</h2>
+  <p>The app requests read-only access to YouTube Analytics for the owner's channel. Details on how that data is used and stored are in the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> &middot;
+    <a href="https://github.com/MostlyFunctionalEngineering/yt-dashboard-data">Source code on GitHub</a>
+  </footer>
+</main>
+</body>
+</html>

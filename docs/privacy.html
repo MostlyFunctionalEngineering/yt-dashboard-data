@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - YT Dashboard Data</title>
+<style>
+  :root { --bg:#fbfbfa; --fg:#1c1f23; --muted:#5b6470; --line:#dcdfe3; --link:#1a5fb4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16181b; --fg:#e8eaed; --muted:#9aa3ad; --line:#2b3036; --link:#7db3ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:3rem 1.25rem 4rem; background:var(--bg); color:var(--fg);
+         font:1.0625rem/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:40rem; margin:0 auto; }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 .5rem; }
+  h2 { font-size:1.2rem; margin:2.25rem 0 .5rem; }
+  p, ul { margin:.75rem 0; }
+  li { margin:.35rem 0; }
+  .meta { color:var(--muted); margin-top:0; }
+  a { color:var(--link); text-underline-offset:.15em; overflow-wrap:anywhere; }
+  a:focus-visible { outline:2px solid var(--link); outline-offset:2px; }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line); color:var(--muted); font-size:.95rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">YT Dashboard Data &middot; Last updated September 23, 2026</p>
+
+  <p>YT Dashboard Data is a personal tool used only by its owner to view analytics for their own YouTube channel, Mostly Functional Engineering. It is not offered to the public and does not collect data from any other users.</p>
+
+  <h2>Data the app accesses</h2>
+  <p>With the owner's authorization, the app uses Google OAuth to read YouTube Analytics data for the owner's own channel through the read-only scope <code>yt-analytics.readonly</code>. This includes:</p>
+  <ul>
+    <li>Views, watch time, average view percentage, likes, comments, and shares</li>
+    <li>Subscribers gained and lost</li>
+    <li>Per-video performance for the channel's top videos</li>
+  </ul>
+  <p>The app also reads publicly available channel and video information (such as the channel title, subscriber count, and video titles) from the YouTube Data API.</p>
+
+  <h2>How the data is used</h2>
+  <p>The data is used for one purpose: calculating summary figures and trends (for example, week-over-week and 4-week vs. 12-week comparisons) that power a personal dashboard. It is not used for advertising, profiling, or any other purpose.</p>
+
+  <h2>How the data is stored</h2>
+  <ul>
+    <li>Aggregated results are written to a JSON file in the project's <a href="https://github.com/MostlyFunctionalEngineering/yt-dashboard-data">public GitHub repository</a>. The file contains channel-level statistics only and no personal information about viewers or subscribers.</li>
+    <li>Earlier versions of that file remain in the repository's version history.</li>
+    <li>The OAuth credentials the app uses to access Google are stored as encrypted GitHub Actions secrets and are never published.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>The app does not sell, rent, or transfer Google user data to third parties. The only place results are published is the repository described above.</p>
+
+  <p>The app's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Revoking access and deleting data</h2>
+  <p>The owner can revoke the app's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Revoking access stops all further data collection. The stored JSON file can be deleted from the repository at any time.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the way the app handles data changes, this page will be updated and the date above will change.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+
+  <footer><a href="index.html">Back to YT Dashboard Data</a></footer>
+</main>
+</body>
+</html>
